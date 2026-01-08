@@ -6,12 +6,14 @@ import CurriculumPage from "./curric";
 import FAQSection from "./faq";
 import ContactPage from "./contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
+
 
 function App() {
   return (
 
     
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -19,7 +21,7 @@ function App() {
         <Route path="/faq" element={<FAQSection />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
